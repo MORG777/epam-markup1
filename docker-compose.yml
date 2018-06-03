@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+  landing:
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+    volumes:
+      - "./public_html:/public_html"
+    ports:
+      - "8080:8080"
