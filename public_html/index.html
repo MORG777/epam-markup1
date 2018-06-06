@@ -1,153 +1,260 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Шаблон</title>
+<html lang="en">
+<head>
+    <title>Шаблон</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <div class="wrapper">
-            <!--<header>MySite</header>-->
-            <aside class="menu">
-                <a href="#" class="logo">My<br/>site</a>
-                <nav>
-                    <ul>
-                        <li><a href="#FirstSection">PORTFOLIO</a></li>
-                        <li><a href="#SecondSection">ABOUT ME</a></li>
-                        <li><a href="#ThirdSection">CONTACT</a></li>
+        <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside_wrapper">
+                <div class="logo">
+                    <div class="logo__text">My<br/>site</div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#FirstSection" class="nav__link">PORTFOLIO</a></li>
+                        <li class="nav__item"><a href="#SecondSection" class="nav__link">ABOUT ME</a></li>
+                        <li class="nav__item"><a href="#ThirdSection" class="nav__link">CONTACT</a></li>
                     </ul>
                 </nav>
-            </aside>
-            <main>
-                    <section id="FirstSection">
-                        <img src="для шаблона.jpg" height="700" width="600"/>
-                        <ul class="paginator">
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                        </ul>
-                    </section>
-                <section id="SecondSection">
-                    <h1>About me</h1>
-                    <img src="" />
-                    <p>
-                        <img src="about me.jpg" height="" width=""/>
-                    </p>
-                    <h2>My name</h2>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
-                    </p>
-                    <hr>
-                    <h2>Technical skills</h2>
-                    <h3>Photography</h3> 
-                    <div class="progressbar">
-                        <div style="width:95%"> 95%</div>
-                    </div>
-                    <h3>Web Desing</h3> 
-                    <div class="progressbar">
-                        <div style="width:85%"> 85%</div>
-                    </div>
-                    <h3>Photoshop</h3> 
-                    <div class="progressbar">
-                        <div style="width:80%"> 80%</div>
-                    </div>
-                    <button>Donload Resume</button>
-                    <hr>
-                    <h2>How mach i charge</h2>
-                    <div class="prices">
-                        <div class="price">
-                            <h3>Basic</h3>
-                            <ul>
-                                <li>Web Desing</li>
-                                <li>Photography</li>
-                                <li>5GB Storage</li>
-                                <li>Mail Support</li>
-                                <li><strong>10$</strong> per month</li>
-                            </ul>
-                            <p class="footer">
-                                <a class="btn">sign  up</a>
-                            </p>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="container">
+
+                <div class="FirstSection" id="FirstSection">
+                    <div class="FirstSection_row">
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="1.jpg" alt=""></div>
                         </div>
-                        <div class="price">
-                            <h3>Pro</h3>
-                            <ul>
-                                <li>Web Desing</li>
-                                <li>Photography</li>
-                                <li>5GB Storage</li>
-                                <li>Mail Support</li>
-                                <li><strong>25$</strong> per month</li>
-                            </ul>
-                            <p class="footer">
-                                <a class="btn">sign  up</a>
-                            </p>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="2.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="3.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="4.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="5.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="6.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="3.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="1.jpg" alt=""></div>
+                        </div>
+                        <div class="FirstSection__img-wrap">
+                            <div class="img__wrap"><img src="7.jpg" alt=""></div>
                         </div>
                     </div>
-                </section>
-                <section id="ThirdSection">
-                    <h2>
-                        Contact Me
-                    </h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <form>
-                        <fieldset>
-                            <label>
-                                Name
-                                <input type="text"/>
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <label>
-                                Email
-                                <input type="email"/>
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <label>
-                                Message
-                                <input type="text"/>
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <input type="submit" />
-                        </fieldset>
-                    </form>
-                </section>
-            </main>
-            <div class="clear"></div>
-            <footer>
-                <div class="col">
-                    <h3>INFO</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="pagination__wrap">
+                        <div class="pagination__item">
+                            <div class="pagination__numbers-wrap">
+                                <a class="pagination__numbers_btn pagination__numbers_btn--prev-nolink" href="">«</a>
+                                <ul class="pagination__numbers-list">
+                                    <li class="pagination__numbers-item"><a class="pagination__numbers-link pagination__numbers-link--active" href="">1</a></li>
+                                    <li class="pagination__numbers-item"><a class="pagination__numbers-link" href="">2</a></li>
+                                    <li class="pagination__numbers-item"><a class="pagination__numbers-link" href="">3</a></li>
+                                    <li class="pagination__numbers-item"><a class="pagination__numbers-link" href="">4</a></li>
+                                </ul>
+                            <a class="pagination__numbers_btn pagination__numbers_btn--next" href="">»</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <h3>BLOG POSTS</h3>
-                    <p><img src="3.jpg" height="" width=""/></p>
-                    <hr>
-                    <p><img src="4.jpg" height="" width=""/></p>
+
+                <div class="SecondSection" id="SecondSection">
+                    <div class="content-wrapper">
+                        <h2 class="title">About Me</h2>
+                        <div class="SecondSection__block">
+                            <div class="me__photo">
+                                <img src="about me.jpg" class="photo" >
+                            </div>
+                            <h1 class="title title__sub">My name</h1>
+                            <p class="me__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            
+                        </div>
+                        <div class="SecondSection__block">
+                            <h2 class="title title__sub">Technical Skills</h2>
+                            <div class="skills-block">
+                                <ul class="slills-list">
+                                    <li class="skills__item">
+                                        <div class="skills__name">Photography</div>
+                                        <div class="skills__progress">
+                                            <div class="skills__progress-ok skills__progress-ok--95">95%</div>
+                                        </div>
+                                    </li>
+                                    <li class="skills__item">
+                                        <div class="skills__name">Web Desing</div>
+                                        <div class="skills__progress">
+                                            <div class="skills__progress-ok skills__progress-ok--85">85%</div>
+                                        </div>
+                                    </li>
+                                    <li class="skills__item">
+                                        <div class="skills__name">Photoshop</div>
+                                        <div class="skills__progress">
+                                            <div class="skills__progress-ok skills__progress-ok--80">80%</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-down">Download Resume</button>
+                            </div>
+
+
+                        </div>
+                        <div class="SecondSection__block">
+                            <h2 class="title title__sub">How much I charge</h2>
+                            <div class="price-block">
+                                <ul class="price_list">
+                                    <li class="price_item">
+                                        <div class="tariff__block">
+                                            <ul class="tariff__list">
+                                                <li class="tariff__item">
+                                                    <div class="tariff__name">Basic</div>
+                                                </li>
+                                                <li class="tariff__item">Web Design</li>
+                                                <li class="tariff__item">Photography</li>
+                                                <li class="tariff__item">5Gb Storage</li>
+                                                <li class="tariff__item">Mail Support</li>
+                                                <li class="tariff__item">
+                                                    <div class="tariff__price">
+                                                        <div class="price"><span class="price_dollar">$</span>10</div>
+                                                        <div class="price__subtext">per month</div>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff__item">
+                                                    <div class="btn-action">
+                                                        <button class="btn btn-sing">Sing Up</button>
+                                                    </div>
+                                                    
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="price_item">
+                                        <div class="tariff__block">
+                                            <ul class="tariff__list">
+                                                <li class="tariff__item">
+                                                    <div class="tariff__name">Pro</div>
+                                                </li>
+                                                <li class="tariff__item">Web Design</li>
+                                                <li class="tariff__item">Photography</li>
+                                                <li class="tariff__item">50Gb Storage</li>
+                                                <li class="tariff__item">Endless Support</li>
+                                                <li class="tariff__item">
+                                                    <div class="tariff__price">
+                                                        <div class="price"><span class="price_dollar">$</span>25</div>
+                                                        <div class="price__subtext">per month</div>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff__item">
+                                                    <div class="btn-action">
+                                                            <button class="btn btn-sing">Sing Up</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col tags">
-                    <h3>POPULAR TAGS</h3>
-                    <a class="active">tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
-                    <a>tage1</a>
+                <div class="ThirdSection" id="ThirdSection">
+                    <h2 class="title title-ThirdSection">Contact Me</h2>
+                    <div class="content-wrapper">
+                        <div class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero animi nisi omnis quia! Illo vero saepe assumenda animi doloribus sed in!</div>
+                        <form action="" method="POST" class="form">
+                            <div class="form__row">
+                                <div class="form__input-elem">
+                                    <label for="" class="form__field-title">Name</label>
+                                    <input type="text" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__input-elem">
+                                    <label for="" class="form__field-title">Email</label>
+                                    <input type="email" class="form__input" >
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__field-title">Message</label>
+                                <textarea name="" class="form__big-text"></textarea>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__sent-btns">
+                                    <input class="btn form__btn btn--send" type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        
+                        </form>
+                    </div>    
                 </div>
-            </footer>
+            </div>
+            <div class="footer-wrap">
+                <div class="container">
+                    <footer class="footer">
+                        <div class="footer__block">
+                            <div class="footer__title">info</div>
+                            <p class="footer__info">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__title">blog posts</div>
+                            <div class="blog">
+                                <ul class="blog__list">
+                                    <li class="blog__item">
+                                        <div class="blog__img-wrap">
+                                            <img src="15.jpg" class="blog__img" alt="Lorem">
+                                        </div>
+                                        <div class="blog__post">
+                                            <div class="blog__title">Lorem</div>
+                                            <div class="blog__desc">Sed mattis</div>
+                                        </div>
+                                    </li>
+                                    <li class="blog__item">
+                                        <div class="blog__img-wrap">
+                                            <img src="16.jpg" class="blog__img" alt="Lorem">
+                                        </div>
+                                        <div class="blog__post">
+                                            <div class="blog__title">Ipsum</div>
+                                            <div class="blog__desc">Preas tinci sed</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__title">popular tags</div>
+                            <div class="footer__list-tags">
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                                <span class="footer__tag">tag1</span>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
